@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    height: 100vh; /* Asegura que la altura sea 100% de la ventana */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Esto asegura que la imagen esté detrás de todo lo demás */
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Asegura que la imagen cubra toda la pantalla */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #f7a1cd;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#imagenMensaje {
+    display: none;
+    margin-top: 30px;
+}
+
+.image {
+    width: 17%; /* Ajusta el tamaño de la imagen de "nosotros" */
+    max-width: 400px; /* No se agrandará más de 600px */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+    object-fit: contain; /* Mantiene la proporción de la imagen */
+}
+
+.mensaje {
+    font-size: 24px;
+    color: #fff;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.hidden {
+    display: none;
+}
+.mensaje {
+    font-size: 24px;
+    color: #35c6ff;  /* Color del texto */
+    margin-top: 20px;
+    font-weight: bold;
+    font-style: italic;  /* Hace el texto cursivo */
+    text-shadow: 2px 2px 5px black, -2px -2px 5px black, 2px -2px 5px black, -2px 2px 5px black; /* Contorno negro */
+}
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Usa toda la pantalla en ancho */
+    height: 100vh; /* Usa toda la pantalla en alto */
+    z-index: -1;
+    background-image: url('fondo.jpg');  /* Usa PNG de alta calidad */
+    background-size: cover;  /* Ajusta sin deformar */
+    background-position: center center; /* Centra bien la imagen */
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Evita el desplazamiento al hacer scroll */
+    image-rendering: crisp-edges; /* Mejora la nitidez en algunos navegadores */
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.mensaje {
+    font-size: 24px;
+    color: #34e7ff;
+    margin-top: 20px;
+    font-weight: bold;
+    font-style: italic;
+    text-shadow: 2px 2px 5px black, -2px -2px 5px black, 2px -2px 5px black, -2px 2px black;
+    animation: fadeIn 3s ease-out; /* Aplicamos la animación */
+}

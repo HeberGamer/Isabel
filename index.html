@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Pequeño Detalle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Reproductor de música -->
+    <audio id="miCancion">
+        <source src="cancion2.mp3" type="audio/mp3">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Fondo de flores -->
+        <div class="background">
+            <img src="fondo.jpg" alt="Fondo de flores" class="background-image">
+        </div>
+
+        <!-- Botones -->
+        <div class="buttons">
+            <button id="flor1" class="btn">🌸 Flor 1</button>
+            <button id="flor2" class="btn">🌸 Flor 2</button>
+        </div>
+
+        <!-- Imagen con mensaje -->
+        <div id="imagenMensaje" class="hidden">
+            <img src="Isabela.jpg" alt="Imagen especial" class="image">
+            <p class="mensaje">"Las personas especiales llegan a nuestra vida en el momento justo,<br>y sin darnos cuenta, hacen que todo sea mejor."</p>
+            <p class="mensaje">Espero que este pequeño detalle te saque una sonrisa.<br>Gracias por tu amistad y por ser una persona increíble.✨<br>FELIZ 14 DE FEBRERO.</p>
+        </div>
+
+        <!-- Botón para mostrar imagen con mensaje -->
+        <button id="mostrarImagen" class="btn">Ver Mensaje</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
